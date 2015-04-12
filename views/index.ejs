@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/index/style.css">
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <title>Dreamon原创歌曲私人定制平台</title>
+</head>
+<body>
+<!--head 部分代码-->
+<div>
+  <div class="dreamon-head-container">
+    <div class="dreamon-head-textfield">
+      <div class="dreamon-logo-position"><img src="images/dreamon_logo.png" width="169px">
+      </div>
+      <!--logo位置-->
+      <div class="dreamon-head-ul">
+        <ul>
+          <li><a href="login">登陆</a></li>
+          <li><a href="register">注册</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="dreamon-align-position">
+    <div class="dreamon-text-img1"><img src="images/index/dreamon_1mg.jpg" width="100%">
+    </div>
+    <div class="dreamon-text-space">
+      <button id="go-private" class="dreamon-button-grey">私人订制入口&nbsp;
+        <img src="images/index/arrow_right.png" class="dreamon-arrow1"></button>
+
+      <button id="go-musician" class="dreamon-button-grey dreamon-button-grey1">音乐人入口&nbsp;
+        <img src="images/index/arrow_right.png" class="dreamon-arrow1"></button>
+    </div>
+    <div class="dreamon-button-space"><a href="#2ndpage">
+        <img src="images/index/arrow_down.png" class="arrow_down" width="49px;" id="arrow_down"></a>
+    </div>
+  </div>
+</div>
+<!--head部分代码结束-->
+
+<div class="dreamon-background-col">
+  <!--左侧导航栏-->
+  <div class="dreamon-left-toolbar" id="left">
+    &nbsp;
+  </div>
+  <!--添加左侧导航栏结束-->
+  <div class="dreamon-body-container" id="center"><!--定义容器宽度-->
+    <div class="dreamon-text-space1" id="2ndpage">Dreamon,可能是这个星球第一个可以为你量身定制原创歌曲的平台。
+      从作词/作曲/编曲/到后期录制/混音/乃至视频制作/乐队表演，我们为你提供贴心的一站式服务。
+    </div>
+    <!--中间图片-->
+    <div class="dreamon-text-img2"><img src="images/index/dreamon_2img.png" width="550px">
+    </div>
+    <div class="dreamon-text-space2">一站式服务，方便快捷
+    </div>
+    <div class="dreamon-text-space3" id="3rd_page">Dreamon,将用科学合理的模式引导你参与创作，除了得到专属原创歌曲成品外
+      ，还可从中获得参与歌曲创作过程的成就感及体验难忘的音乐创作经历。
+    </div>
+    <div class="dreamon-text-img3"><img src="images/index/dreamon_3img.png" width="570px">
+    </div>
+    <div class="dreamon-text-space5">参与创作歌曲，体验难忘经历
+    </div>
+    <div class="dreamon-text-space6" id="4thpage">还在为送爱人什么礼物绞尽脑汁吗，还在为你的婚礼创意而发愁吗，还在为您小小的文
+      艺梦想而踌躇不前吗，开始您的Dreamon之旅吧！
+    </div>
+    <div class="dreamon-img-left">
+      <div class="dreamon-text-img4"><img src="images/index/dreamon_4img.png" width="640px">
+      </div>
+    </div>
+    <div class="dreamon-text-space7">&nbsp;&nbsp;&nbsp;&nbsp;最美好的时刻给TA留下最美好的回忆
+    </div>
+    <div class="dreamon-background-col1">&nbsp;
+    </div>
+    <!--补充部分背景颜色-->
+  </div>
+  <div style="clear: both"></div>
+  <!--添加右侧导航栏-->
+  <div class="dreamon-right-toolbar" id="right">
+    <div class="dreamon-right-toolbar1">
+      <a href="#2ndpage">
+        <button class="dreamon-toolbar-button" id="toolbar1">
+        </button>
+      </a><br>
+      <a href="#3rd_page">
+        <button class="dreamon-toolbar-button" id="toolbar2"></button>
+      </a>
+      <br>
+      <a href="#4thpage">
+        <button class="dreamon-toolbar-button" id="toolbar3"></button>
+      </a>
+    </div>
+  </div>
+  <!--添加右侧导航栏结束-->
+</div>
+<!--网页主体部分代码-->
+<!--网页底部代码-->
+<div class="dreamon-text-bottom">
+  <div class="dreamon-text-container">
+               <span>
+                   <a href="#">关于我们</a>
+                   <a href="#">加入我们</a>
+                   <a href="#">联系我们</a>
+                   <a href="#">常见问题</a>
+               </span>
+  </div>
+  <div class="dreamon-text-space8">©2015 Dreamon 使用前必读 京ICP证030173号
+  </div>
+</div>
+
+<script>
+  //定义私人订制和音乐人主按钮链接位置
+  var $private = document.getElementById("go-private");
+  var $musician = document.getElementById("go-musician");
+  $private.onclick = function () {
+    location.href = "introduction.html";
+  };
+  $musician.onclick = function () {
+    location.href = "intro-musician.html";
+  };
+
+  //定位右侧导航栏，当屏幕向下滚动一个高度后，将hide（）改为show（）
+  $(document).ready(function () {
+    $('#right').hide();
+    $(document).scroll(function () {
+      var scrollHeight = $(document).scrollTop();
+      var windowHeight = window.innerHeight;
+      if (scrollHeight > windowHeight) {
+        $("#right").show();
+        var h1 = 1.9 * windowHeight;
+        var h2 = 2.6 * windowHeight;
+        if (scrollHeight < h1) {
+          $("#toolbar1").css("backgroundColor", "rgba(240,132,0,1.0)");
+        }
+        else {
+          $("#toolbar1").css("backgroundColor", "#cacaca");
+        }
+        if (scrollHeight < h2 && scrollHeight > h1) {
+          $("#toolbar2").css("backgroundColor", "rgba(240,132,0,1.0)");
+        }
+        else {
+          $("#toolbar2").css("backgroundColor", "#cacaca");
+        }
+        if (scrollHeight > h2) {
+          $("#toolbar3").css("backgroundColor", "rgba(240,132,0,1.0)");
+        }
+        else {
+          $("#toolbar3").css("backgroundColor", "#cacaca");
+        }
+      }
+      if (scrollHeight < windowHeight) {
+        $("#right").hide();
+      }
+    })
+  })
+</script>
+</body>
+</html>

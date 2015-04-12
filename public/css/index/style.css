@@ -1,0 +1,318 @@
+/*!!!!!!!!!页面body的css【备注：定义所有页面通用字体、链接样式】*/
+body { min-width: 960px;font-family: 微软雅黑;margin:auto;}
+a {text-decoration:none;}
+a:hover {text-decoration: underline;}
+a:link {color: #ffffff;font-family: 微软雅黑;}
+button{outline: none}
+/*！！！页面body的css结束*/
+
+/*!!!!!!!!页面header的css【备注：主页页头css样式】*/
+.dreamon-head-container{
+    height:65px;background-color: #363636;margin-left: auto;
+    margin-right: auto;
+}
+.dreamon-head-textfield{
+    width: 860px;min-width: 759px;margin-right: auto;margin-left: auto;
+}
+.dreamon-logo-position{
+    float:left;position: absolute;padding-top: 20px;
+}
+.dreamon-head-ul{float:right;text-align: right;padding-top: 5px;}
+.dreamon-head-ul li{font-size: 17px;font-family: 微软雅黑;display: inline;}
+.dreamon-head-ul a{color: #ffffff;float: left;width: 50px;padding-right: 30px}
+/*！！！！页面header的css结束*/
+
+/*!!!!!!!!页面footer的css【备注：主页页尾样式】*/
+.dreamon-text-bottom{
+    background-color: #363636;overflow: auto;text-align: center;height:160px;
+    margin-left: auto;margin-right: auto;width:100%;
+}
+.dreamon-text-container{
+    width:80%;margin-left: auto;margin-right: auto;font-size: 18px;margin-top: 45px;
+}
+.dreamon-text-container span{
+    margin:200px auto;margin-top: 40px;font-family: 微软雅黑;font-size: 17px;
+}
+.dreamon-text-container span a{
+    margin-left: 35px;color: #bababa;}
+.dreamon-text-space8{
+    margin-top:20px; font-size: 13px; text-align: center;color: #bababa; }
+/*！！！页面footer的css结束*/
+
+/*!!!!!!!!用户页面头部的css【用户页面头部样式】*/
+.head_toolbar{
+    float:right;padding-top: 8px;vertical-align: middle;
+}
+.head_toolbar ul{
+    float:left;display:inline;margin-left: 2px;
+}
+.head_toolbar li{
+    padding-right: 0px;float:left;display:inline;margin-left:0px;
+}
+.head_toolbar a{color:#ffffff;font-size: 13px;}
+
+#head_textfield{
+    min-width: 850px;width:850px;margin: auto; padding-top: 22px;
+    font-size: 17px;line-height: 185%;font-family: 微软雅黑;}
+#head_icon1{
+    width:39px;margin-top: -6px;
+}
+#head_icon2{
+    width:18px;margin-top: 4px;
+}
+#head_icon3{
+    width:16px;margin-top: 4px;
+}
+/*！！！用户页面头部的css结束*/
+
+/*!!!!!!!!buy-now.html页面样式*/
+@charset "utf-8";
+.buy-bgcolor{background-color: #f6f6f6;width:100%;padding-top: 34px;padding-bottom: 28px;}/*背景颜色*/
+.buy-container{
+    width:850px; margin:auto;background-color: #ffffff;padding-top: 11px;
+}/*第一层画板背景*/
+.buy-sheetfield{
+    width:690px; margin-left:auto;margin-right: auto;padding-top: 0px;padding-bottom: 50px;
+}/*表单文字范围*/
+.buy-sheetfield p{
+    font-size: 26px;text-align: center;
+}
+.form1{
+    width:100%;height:263px;font-size:17px;
+}/*基本信息表单*/
+span{
+    font-size:22px;
+}
+.form-text-space{
+    margin-top: 23px;
+}/*定义三部分纵向间隔*/
+[class*='text-style']{
+    color: rgba(72, 72, 72, 0.96);
+}/*定义非表单域文字颜色*/
+.form-text-style{
+    margin-top: 24px;
+}/*定义表单内部文本间距*/
+input:focus{outline-style: none;}
+.input12{
+    width: 100px;
+    color: #c4c4c4;
+    margin-left: 40px;
+}
+.input34{
+    width: 250px;
+    color: #c4c4c4;
+    margin-left: 5px;
+}/*form 1样式*/
+.form2{
+    width:100%;font-size:17px;margin-top:30px;
+}
+
+.form-line2-21{
+    margin-left:34px;
+}
+[class*='form-line']{
+    float: left;
+}
+.form-line-1 span{
+    font-size:10px;color: red;
+}
+
+.form-line3-2{
+    margin-left: 30px;
+}
+
+.form-submit{
+    text-align:center;font-size: 28px;margin-top: 40px;
+}
+.form-text-style1{
+    margin-top: 30px;
+}
+.input-key1{width: 175px;margin-right: 30px; }
+.input-key2{width:123px;margin-right: 20px;}
+.form-text-style2{
+    margin-top: 30px;margin-bottom: 30px;
+}
+.form-text-style3{
+    margin-top: 55px
+}
+.form-text-style4{
+    margin-top: 130px;
+}
+.form-line-1{padding-top:5px;font-size: 15px;}
+.form-line-3{
+    margin-right: 20px;
+}
+.form_button-submit{
+    border-radius: 50px;
+    color:  #ffffff;
+    border:0px;
+    background-color:#F08300;
+    font-size: 21px;
+    padding: 6px 18px 9px 18px;
+    text-align: center;
+    width:101px;
+    height:43px;
+    font-family: 微软雅黑;
+}
+/*定义checkbox样式*/
+[class*=form-checkbox]{
+    margin-left:30px;float: left;
+}
+#div1{
+    position:relative;
+}
+.checkbox-hidden{
+    visibility: hidden;position:relative;float:left;height:25px;width:42px;
+}
+.checkbox-style{
+    position:absolute;height:25px;width:25px;
+    border-style: solid;border-color: rgba(186, 186, 186, 0.70);border-radius: 7px;border-width:thin;
+}
+.checkbox-style1{
+    position:absolute;left:2px;visibility:hidden;
+}
+.checkbox-style11{
+    position:absolute;left:2px;visibility:visible;top:-3px;
+}
+.checkbox-style1 img{
+    width:29px;
+}
+/*！！！！buy-now.html页面样式结束*/
+
+/*!!!!!!!index.html页面样式【主页样式】*/
+a {text-decoration:none;}
+ul{
+    list-style: none;
+}
+/*----header部分css----*/
+.dreamon-align-position{min-width: 960px;text-align: center;clear: both}
+.dreamon-text-img1{
+    text-align: center;
+}
+.dreamon-text-space{
+    margin-top:25px;text-align: center;margin-left:auto;margin-right:40px;
+}
+.dreamon-arrow1{
+    vertical-align:middle;padding-bottom: 5px;height:27px;
+}
+.dreamon-button-grey {
+    border-radius: 50px;
+    color:  #ffffff;
+    border:0px;
+    background-color: #bbbbbb;
+    font-size: 22px;
+    padding: 9px 18px 9px 18px;
+    text-align: center;
+    width:238px;
+    height:55px;
+    font-family: 微软雅黑;
+}
+.dreamon-button-grey1{
+    margin-left: 55px;
+}
+
+.dreamon-button-space{
+    margin-top: 0px;text-align: center;
+}
+.arrow_down{ width:49px;padding-right: 43px;padding-top: 10px;}
+/*--------------dreamon head field---------*/
+/*----------dreamon body field-----------*/
+.dreamon-background-col{background-color: #f6f6f6 ;margin:auto;width:100%;margin-top:19px;}
+.dreamon-background-col1{height:55px;}
+.dreamon-left-toolbar{
+    float:left;width:20%;background-color: inherit;height:1730px;
+}/*左侧导航栏*/
+.dreamon-body-container{min-width:759px;width:60%;margin-left:auto;
+    margin-right:auto;padding-top:0px;background-color: #f6f6f6;float: left;}
+.dreamon-text-space1{
+    padding-top:45px;margin-left: auto;margin-right:auto;width:759px;
+    text-align: left;font-size: 17px;font-family: 微软雅黑;
+}
+
+.dreamon-text-img2{
+    margin-top:30px;text-align: center;
+}
+.dreamon-text-space2{
+    font-family: 微软雅黑; margin-top:8px;text-align: center;margin-left: auto;
+    margin-right:auto;font-size: 22px;color: rgba(85, 169, 255, 0.68);
+}
+.dreamon-text-space3{
+    margin-top:90px;width:759px;
+    text-align: left;font-size: 17px;margin-left: auto;margin-right:auto;
+}
+
+
+.dreamon-text-space5{
+    margin-top:10px;width:759px;color: rgba(85, 169, 255, 0.68);
+    text-align: center;font-size: 22px;margin-left: auto;margin-right:auto;
+}
+
+.dreamon-text-space6{
+    margin-top:64px;width:759px;
+    text-align: left;font-size: 17px;margin-left: auto;margin-right:auto;
+}
+
+
+.dreamon-text-space7{
+    margin-top:10px;text-align:center;font-size: 22px;
+    margin-left: auto;margin-right:auto;color: rgba(85, 169, 255, 0.68);
+}
+/*--------------dreamon  text field------*/
+.dreamon-text-img4{
+    margin-top: 38px;text-align: center;
+}
+.dreamon-img-left{
+    margin-left: 100px;margin-right: auto;
+}
+.dreamon-text-img3{
+    margin-top: 80px;text-align: center;
+}
+/*右侧导航栏*/
+.dreamon-right-toolbar{position:fixed;width:20%;right:0px;top:0px;}
+.dreamon-right-toolbar1{margin-top: 200px;margin-left: 40px;position:absolute;}
+.dreamon-toolbar-button{border-radius: 50%;
+    background-color: #cacaca;width: 13px;height:13px;border: 0px;margin-top: 16px;}
+/*右侧导航栏结束*/
+
+
+/*!!!!!!!index.html页面样式【主页样式】结束*/
+
+/*!!!!!!!preview.html页面样式*/
+.head_background{
+    height:193px;background-color: #d9d9d9;
+}
+.head_button-orange{
+    border-radius: 50px;
+    color:  #ffffff;
+    border:0px;
+    background-color:#F08300;
+    font-size: 21px;
+    padding: 9px 18px 9px 18px;
+    text-align: center;
+    width:201px;
+    height:48px;
+    margin-left: 55px;
+    font-family: 微软雅黑;
+}
+.dreamon-text-space{
+    margin-top:25px;text-align: center;margin-left:auto;margin-right:40px;
+}
+.dreamon-arrow1{
+    vertical-align:middle;padding-bottom: 5px;height:27px;
+}
+/*head部分css样式*/
+.body-container{width:850px; margin:auto;margin-top: 30px;text-align: center;}
+.div1{float:left;font-size: 21px;font-family: 微软雅黑}
+.div2{float:right;}
+.arrow-style {
+    width: 21px;
+}
+
+.content1-1{width:273px;padding-right:10px;text-align: left}
+.content1-2{width:273px;padding-right: 5px;padding-left: 5px;text-align: center}
+.content1-3{width:273px;padding-left: 10px;text-align: right}
+.icon-position-center{position: absolute;left:120px;z-index:1;top:60px;}
+.button-play-size{  width:49px;  }
+.button-size{color: transparent;
+    border: 0px;background-color: transparent;border-radius: 50%;height:55px;width:55px;}
+/*!!!!!!!preview.html页面样式结束*/
